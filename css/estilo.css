@@ -193,6 +193,125 @@ img{
     max-width: 31.875em;
 }
 
+/* Partidas */
+.games-aovivo, .games-embreve{
+    width: auto;
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    justify-content: flex-start;
+    font-size: 1.875em;
+}
+
+.games-aovivo h2, .games-embreve h2{
+    color: #fff;
+    font-size: 0.9em;
+    margin-right: 1em;
+}
+
+.partida{
+    display: flex;
+    align-items: center;
+    margin-right: 2.5em;
+}
+
+.partida p{
+    color: #fff;
+    font-size: 0.7em;
+}
+
+.partida img{
+    width: 2em;
+}
+
+.time1, .time2{
+    display: flex;
+    align-items: center;
+}
+
+.time1 p, .time2 p{
+    color: #fff;
+}
+
+.time1 img{
+    margin-left: 0.5em;
+}
+
+.time2 img{
+    margin-right: 0.5em;
+}
+
+.divisao{
+    background-color: aliceblue;
+    height: 70%;
+    width: 1px;
+    margin-right: 4em;
+}
+
+/* notícias */
+.noticias{
+    width: 100%;
+    height: 55em;
+    background-color: #1E1C21;
+}
+
+.container-noticias{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.noticias-artigos{
+    /* font-size: 1.875em; */
+    /* background-color: aliceblue; */
+    width: 75%;
+}
+
+.noticias-artigos h3{
+    color: #fff;
+    font-size: 1.9em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.artigo{
+    width: 14.8125em;
+    height: 22.75em;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    margin-bottom: 1.5em;
+}
+
+.posicionamento-artigos{
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content-artigo{
+    width: 85%;
+    background-color: red;
+
+}
+
+.artigo h4{
+    font-size: 1.1em;
+}
+.artigo p{
+    font-size: 0.9em;
+}
+
+.cronograma{
+    width: 25%;
+    /* background-color: blue; */
+}
+
+
+
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
 
