@@ -4,7 +4,8 @@
     --background: #000000;
     --red: #C20000;
     --blue: #001F70;
-    --gradiente: linear-gradient(100deg, #000000 0%, rgba(83. 83. 83. 0.577381) 25%, rgba(196. 196. 196. 0) 87.5%);
+    --bgnews: #1E1C21;
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
 
     --font: 'Titillium Web', sans-serif;
 }
@@ -31,7 +32,7 @@ img{
 }
 .content{
     /* background-color: aqua; */
-    width: 100%;
+    width: 95%;
     max-width: 75em;
     height: 100%;
     margin: auto;
@@ -42,6 +43,13 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+
+.flex-spar-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .header-top img{
     max-width: 21.18em;
 }
@@ -257,130 +265,88 @@ img{
 
 
 /* notícias */
-.noticias{
+.bg-news{
     width: 100%;
-    height: 55em;
-    background-color: #1E1C21;
+    height: auto;
+    background-color: var(--bgnews);
 }
-
-
-
-.container-noticias{
-    display: flex;
-    justify-content: space-between;
-    /* background-color: red; */
-    height: 100%;
-}
-
-.noticias-artigos{
-    /* font-size: 1.875em; */
-    /* background-color: aliceblue; */
+.news{
     width: 70%;
+    height: 90%;
 }
-
-.noticias-artigos h3{
+.news h2, .next-games h2{
     color: #fff;
-    font-size: 1.9em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin: 1em 0em;
+    font-size: 2.1875em;
 }
 
-.artigo{
-    width: 14.8125em;
-    height: 22.75em;
-    /* background-color: blue; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center ;
-    margin-bottom: 1.5em;
-    box-shadow: 1px 1px 20px 4px #000000;
-    background: linear-gradient(0deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+.next-games{
+    width: 25%;
+    height: 90%;
 }
 
-.posicionamento-artigos{
-    /* background-color: red; */
+.content-news{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.content-artigo{
+.cardnews{
+    width: 15em;
+    height: 22.5em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px rgb(97, 97, 97), 0px 0px 30px rgb(0, 0, 0);
+}
+
+.cardnews h3{
+    padding: 0.5em 0.6em;
+}
+
+.cardnews p{
+    padding: 0em 0.6em;
+}
+
+.next-games-bg{
     width: 90%;
-    /* background-color: red; */
-
-}
-
-.artigo h4{
-    margin-top: 0.7em;
-    font-size: 1.2em;
-    color: #fff;
-}
-.artigo p{
-    margin-top: 0.5em;
-    font-size: 0.9em;
-    color: #fff;
-}
-
-.container-cronograma{
-    width: 30%;
+    height: auto;
+    background: var(--gradient);
     display: flex;
-    align-items: center;
-    /* background-color: blue; */
-    
-}
-
-.cronograma{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-left: 4em;
-    width: 14.8125em;
-    height: 46.9375em;
-    box-shadow: 1px 1px 20px 4px #000000;
-    background:  linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%, #000000 100%);
+    justify-content: space-around;
+    padding: 2.4em 0;
+}
+
+.next-games-match{
+    width: 100%;
+    height: 6.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+}
+
+.teams{
+    width: 100%;
+    display: flex;
     justify-content: space-around;
 }
 
-.partida-cronograma{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.partida-cronograma p{
-    color: #fff;
-}
-
-.times{
+.next-games-match div{
     display: flex;
     align-items: center;
-    margin-left: 1em;
 }
 
-.times p{
-    color: #fff;
+.next-games-match img{
+    max-width: 2.5em;
 }
 
-.times img{
-    width: 4em;
+.next-games-match > p{
+    margin-top: 1em;
 }
-
-footer{
-    width: 100%;
-    height: 13.125em;
-    background-color: #010101;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer h3{
-    color: #fff;
-    font-size: 3.125em;
-}
-
 
 
 /* Até 1199px */
