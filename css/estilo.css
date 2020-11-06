@@ -29,11 +29,21 @@ img{
     /* background-color: lightblue; */
     width: 100%;
     height: 5em;
+    display: flex;
+    justify-content: center;
 }
+
+.topo{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
 .content{
     /* background-color: aqua; */
     width: 95%;
-    max-width: 75em;
     height: 100%;
     margin: auto;
     /* background-color: aliceblue; */
@@ -69,22 +79,24 @@ img{
     padding: 0.9em 0.66em;
 }
 .menu a:hover{
-    background-color: var(--red);
+    color: var(--red);
     text-shadow: 0 0 20px #fff;
 }
-#menu-bars{
+.menu-bars{
     display: none;
 }
 /* Banner */
 .banner{
-    position: relative;
+    height: 500px;
+    background-image: url("../img/Banner1920.jpg");
+    background-size: cover;
+    /* background-color: red; */
 }
 
 .banner-container{
     width: 100%;
     height: 100%;
     /* background-color: rgba(127, 255, 232, 0.39); */
-    position: absolute;
     top: 0;
 }
 
@@ -109,7 +121,7 @@ img{
 }
 
 .banner-text h1{
-    font-size: 5.48em;
+    font-size: 4.8em;
 }
 
 .banner-text p{
@@ -141,7 +153,7 @@ img{
 }
 
 .games img{
-    width: 170px;
+    width: 10.625em;
 }
 
 .games ul a:hover img{
@@ -195,7 +207,7 @@ img{
 }
 
 .text-about p{
-    font-size: 1.25em;
+    font-size: 1.3em;
 }
 
 .content-about img{
@@ -255,11 +267,10 @@ img{
 }
 
 
-.games-aovivo::after{
+.divisao{
     content: '';
     border: solid 1px #fff;
-    height: 2em;
-    margin-left: 0.5em;
+    height: 5em;
 }
 
 
@@ -341,11 +352,11 @@ img{
 }
 
 .next-games-match img{
-    max-width: 2.5em;
+    max-width: 4em;
 }
 
 .next-games-match > p{
-    margin-top: 1em;
+    margin-top: 0.1em;
 }
 
 .links-footer{
@@ -391,6 +402,7 @@ img{
 }
 
 .sociais input[type="email"]::placeholder{
+    font-size: 1em;
     color: #B8b3b3;
     font-weight: bold;
     padding-left: 0.3em;
@@ -408,6 +420,7 @@ img{
     justify-content: space-between;
     align-items: center;
     margin-top: 1.5em;
+    /* background-color: red; */
 }
 
 .siga-nos img{
@@ -417,16 +430,225 @@ img{
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
 
+body{
+    font-size: 13px;
+}
+.banner{
+    height: 450px;
+    background-image: url("../img/Banner1440.jpg");
+    background-size: cover;
+    /* background-color: red; */
+}
+
+.cardnews{
+    width: 16em;
+}
+
+.sociais > h2{
+    font-size: 1.1em;
+}
+
 }
 /* Até 991px */
 @media screen and (max-width: 61.93em){
+
+body{
+    font-size: 10px;
+}
+
+.banner{
+    height: 450px;
+    background-image: url("../img/Banner768.jpg");
+    background-size: cover;
+    /* background-color: red; */
+}
+
+
+.text-about p{
+    font-size: 1.38em;
+}
+.news{
+    width: 60%;
+}
+.content-news{
     
 }
+
+.cardnews{
+    width: 20em;
+    height: 26.8em;
+}
+
+.cardnews p{
+    font-size: 1.2em;
+}
+
+.next-games{
+    width: 35%;
+}
+
+.next-games-bg{
+    height: 70em;
+}
+
+.next-games-match > p{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.teams{
+    font-size: 1.5em;
+}
+
+}
+
 /* até 767px */
 @media screen and (max-width: 47.93em){
-   
+
+body{
+    font-size: 7px;
+}
+
+.topo{
+    width: 100%;
+}
+
+.topo img{
+    margin-left: 3em;
+}
+
+.banner{
+    height: 350px;
+    background-image: url("../img/Banner768.jpg");
+    background-size: cover;
+    background-position: cover;
+    /* background-color: red; */
+}
+
+.menu{
+    width: 100%;
+    /* background-color: royalblue; */
+}
+
+.menu-bars{
+    display: flex;
+    margin-right: 2em;
+}
+
+.menu{
+    width: 100%;
+    margin: 0px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+#meus-links{
+    width: 100%;
+    top: 35px;
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    height: 17em;
+    background-color: #000000;
+}
+
+#meus-links ul{
+    margin-right: 40px;
+}
+
+#meus-links a{
+    font-size: 1.5em;
+    padding: 0px;
+}
+
+.mobile{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news{
+    width: 100%;
+}
+
+.content-news{
+    height: 70em;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardnews{
+    width: 24em;
+    height: 32em;
+}
+
+.cardnews h3{
+    padding: 0.2em 0.3em;
+    font-size: 1.7em;
+}
+
+.cardnews p{
+    padding: 0em 0.6em;
+    font-size: 1.5em;
+}
+
+.next-games{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.next-games-bg{
+    height: 60em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.next-games-match{
+    width: 45%;
+    margin-top: 4em;
+}
+
+.teams{
+    font-size: 2em;
+}
+
+.rodape{
+    font-size: 1.5em;
+}
+
+.links-footer{
+    width: 100%;
+    /* background-color: red; */
+}
+
+.logo-rodape{
+    position: relative;
+}
+.rodape-mobile{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sociais{
+    margin-top: 2em;
+}
+
+.sociais input[type="email"]{
+    height: 1.5em;
+    width: 6em;
+}
+
 }
 /* Até 576px */
 @media screen and (max-width: 36em){
 
+
+    
 }

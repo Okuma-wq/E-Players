@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Players</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/76da81d86a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <header class="header-top">
-        <div class="content flex-spbt-center">
+        <div class="topo flex-spbt-center">
             <img src="img/logo.svg" alt="Logo E-Players">
             <nav class="menu">
-                <ul class="flex-spbt-center">
+                <ul id="meus-links" class="flex-spbt-center">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Resultados</a></li>
                     <li><a href="#">Notícias</a></li>
                     <li><a href="#">Cadastro/Login</a></li>
                 </ul>
-                <a href="#" id="menu-bars">
+                <a href="#" class="menu-bars" onclick="botaodomenu()">
                     <i class="fas fa-bars"></i>
                 </a>
             </nav>
@@ -27,10 +27,6 @@
     </header>
     <main>
         <section class="banner">
-            <picture>
-                <source media="(max-width: 90em)" srcset="img/Banner1440.jpg">
-                <img src="img/Banner1920.jpg" alt="Piloto de Formula 1, Hamilton, Riccardo, Vetel, Verstapen">
-            </picture>
             <div class="banner-container">
                 <div class="banner-content">
                     <div class="banner-text">
@@ -86,6 +82,7 @@
                         </div>
                     </div>
                 </div> <!--fim games aovivo-->
+                <div class="divisao"></div>
                 <div class="games-embreve">
                     <h2>EM<br>BREVE</h2>
                     <div class="partida">
@@ -112,8 +109,8 @@
                 </div>
             </div>
         </section>
-        <div class="bg-news">
-            <div class="content flex-spbt-center">
+        <div class="bg-news">   <!-- Inicio Noticias -->
+            <div class="content flex-spbt-center mobile">
                 <section class="news">
                     <h2>Notícias</h2>
                     <div class="content-news">
@@ -242,7 +239,7 @@
         </div>
     </main>
     <footer class="rodape">
-        <div class="content flex-spbt-center">
+        <div class="content flex-spbt-center rodape-mobile">
             <div class="links-footer">
                 <div class="links">
                     <h2>Links Úteis</h2>
@@ -268,7 +265,7 @@
             <div class="sociais">
                 <h2>Faça parte de nosso clan, receba notícias e promoções</h2>
                 <form action="">
-                    <input type="email">
+                    <input type="email" placeholder="E-mail">
                     <input type="submit" value="Cadastrar">
                 </form>
                 <div class="siga-nos">
@@ -280,5 +277,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        function botaodomenu() {
+          var ulDoMenu = document.getElementById("meus-links");
+          if (ulDoMenu.style.display === "flex") {
+            ulDoMenu.style.display = "none";
+          } else {
+            ulDoMenu.style.display = "flex";
+          }
+        }
+        </script>
 </body>
 </html>
